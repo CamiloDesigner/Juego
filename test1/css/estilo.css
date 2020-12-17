@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+:root {
+	--gold1:#f4bd76;
+	--gold2:#f6cd8f;
+	--black1:#1A1B1F;
+	--shadow:0 8px 8px;
+	--color_shadow:#00000033;
+}
+
+
+
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	 
+}
+body{
+	height: 100vh;
+	background-image: radial-gradient(circle at 12.5% 12.5%, #2a2d39 0, #1d1e23 25%, #080807 50%, #000000 75%, #000000 100%);
+	font-family: 'Roboto', sans-serif;
+
+}
+
+
+.container{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 700px;
+	
+}
+
+
+.info{
+	display: flex;
+	color: #ccc;
+	justify-content: center; 
+	padding: 10px;
+}
+
+.parrafo{
+	margin: 10px;
+	padding: 10px;
+	color: var(--gold2);
+	
+}
+
+input{
+	margin: 5px;
+	padding: 7px;
+	outline: none;
+	font-family: inherit;
+	border-radius: 6px;
+	border: 1px solid var(--black1);
+}
+
+input:focus{
+	background: #ccc;
+}
+
+
+
+.btn{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+button{
+	background: linear-gradient(180deg, #f7ce90 0%, #f48d76 100%);
+	border-radius: 9px;
+	text-decoration: none;
+	text-transform: uppercase;
+	color: var(--black1);
+	font-weight: 700;
+	text-align: center;
+	padding: 10px 30px;
+	box-shadow: var(--shadow);
+	
+	
+}
+
+button:hover{
+	color: var(--gold1);
+	cursor: pointer;
+	background: var(--black1);
+	transition: all .4s ease;
+	text-shadow: var(--shadow);
+	
+}
+
+/* Footer alerta */
+
+.footer{
+	cursor: pointer;
+	margin: 10px;
+	 
+}
+
+
+
+
+.footer .fab{
+	margin: 5px;
+}
+
+
+/* Publicidad */
+
+
+
+.titulopublicidad{
+	color: var(--black1);
+	
+}
+
+
+
+.publicidad{
+
+	text-decoration: none;
+	
+	color: var(--black1);
+
+}

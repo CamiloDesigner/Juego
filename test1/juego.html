@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Juego con JS</title>
+  <script src="https://kit.fontawesome.com/4a84806271.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="css/estilo.css">
+</head>
+<body onLoad="escondeEquipo()">
+	<div id="usuario" class="btn"><p class="parrafo">
+		Ingrese su nombre:</p> <input type="text" id="nombreJugador"></input><br>
+	
+    <button id="jugar" value="Jugar" onClick="jugar()">
+        Jugar
+    </button>
+	</div>
+
+
+	<!-- Creando el tablero del juego
+	Escondemos el juego con display none -->
+	
+	<div class="container" id="tablero" style="display: none">
+		
+       <table>
+       	<tr>
+       		<td><img src="img/afa.png" id="1" width="200px" height="300px" onClick="newel(this)"></td>
+       		<td><img src="img/afa.png" id="2" width="200px" height="300px" onClick="boca(this)"></td>
+       		<td><img src="img/afa.png" id="3" width="200px" height="300px" onClick="velez(this)"></td>
+
+       	</tr>
+
+       		<tr>
+       		<td><img src="img/afa.png" id="4" width="200px" height="300px" onClick="racing(this)"></td>
+       		<td><img src="img/afa.png" id="5" width="200px" height="300px" onClick="lorenzo(this)"></td>
+       		<td><img src="img/afa.png" id="6" width="200px" height="300px" onClick="independiente(this)"></td>
+
+       	</tr>
+
+       </table>
+
+	</div>
+    <div id="informacion" class="info"></div>
+    <!-- Otro boton para jugar de nuevo -->
+    <div class="btn" id="jugarDeNuevo" style="display: none;">
+    	<button onClick="jugarDeNuevo()">Jugar de nuevo</button>
+    </div>
+
+    
+      
+   
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+
+
+<script src="js/juego.js"></script>	
+</body>
+</html>
